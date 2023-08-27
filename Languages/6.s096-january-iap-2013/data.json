@@ -1,0 +1,30 @@
+{
+  "course_title":"Introduction to C and C++",
+  "course_description":"This course provides a fast-paced introduction to the C and C++ programming languages. You will learn the required background knowledge, including memory management, pointers, preprocessor macros, object-oriented programming, and how to find bugs when you inevitably use any of those incorrectly. There will be daily assignments and a small-scale individual project.\n\nThis course is offered during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month.\n",
+  "site_uid":"ff743b76-e55f-4ab9-92c7-5930af671e89",
+  "legacy_uid":"0a950506-d1fa-ac0b-ae3b-a771c9ae36f7","instructors": [{
+    "first_name":"Tom",
+    "last_name":"Lieber",
+    "middle_initial":"",
+    "salutation":"",
+    "title":"Tom Lieber"},{
+    "first_name":"Kyle",
+    "last_name":"Murray",
+    "middle_initial":"",
+    "salutation":"",
+    "title":"Kyle Murray"},{
+    "first_name":"Frank",
+    "last_name":"Li",
+    "middle_initial":"",
+    "salutation":"",
+    "title":"Frank Li"}],"department_numbers":["6"],
+  "learning_resource_types":["Problem Sets","Lecture Notes","Projects","Programming Assignments with Examples"],
+  "topics":[["Engineering","Computer Science","Programming Languages"],["Engineering","Computer Science","Software Design and Engineering"]],
+  "primary_course_number":"6.S096",
+  "extra_course_numbers":"",
+  "term":"January IAP",
+  "year":"2013",
+  "level":["Undergraduate"],
+  "image_src":"./static_resources/dc7d141c865352edae2509739884f34e_6-s096iap13.jpg",
+  "course_image_metadata":{"content_type":"resource","description":"Learn the safe ways to cast cats (and other C++ objects) in lecture 7. Photographs by Rachel Macniven and James Moberg on Flickr.","draft":false,"file":"/courses/6-s096-introduction-to-c-and-c-january-iap-2013/dc7d141c865352edae2509739884f34e_6-s096iap13.jpg","file_type":"image/jpeg","image_metadata":{"caption":"Learn the safe ways to cast cats (and other C++ objects) in lecture 7. (Photographs by [Rachel Macniven](http://www.flickr.com/photos/thedinglydell/6145011968) and James Moberg on Flickr.)","credit":"Photographs by Rachel Macniven and James Moberg on Flickr.","image-alt":"A composite image with C++ code on top, and photographs of a tiger and Persian cat below."},"iscjklanguage":false,"learning_resource_types":[],"license":"https://creativecommons.org/licenses/by-nc-sa/4.0/","ocw_type":"OCWImage","resourcetype":"Image","title":"6-s096iap13.jpg","uid":"dc7d141c-8653-52ed-ae25-09739884f34e"}}
+

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lecture Notes on MIT OpenCourseWare</title>
+    <link>/resources/lecture-notes/</link>
+    <description>Recent content in Lecture Notes on MIT OpenCourseWare</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/resources/lecture-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lecture 1</title>
+      <link>/resources/mit6_087iap10_lec01/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_lec01/data.json</guid>
+      <description>Introductory lecture presentation on how to edit, compile, and debug C programs, and C programming fundamentals.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 10</title>
+      <link>/resources/mit6_087iap10_lec10/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_lec10/data.json</guid>
+      <description>Lecture presentation on the C standard library: stdio.h, ctype.h, stdlib.h, assert.h, stdarg.h, and time.h.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 11</title>
+      <link>/resources/mit6_087iap10_lec11/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_lec11/data.json</guid>
+      <description>Lecture presentation on dynamic memory allocation, designing the malloc() function, a simple implementation of malloc(), a real-world implementation of malloc(), using malloc(), using valgrind, and garbage collection.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 12</title>
+      <link>/resources/mit6_087iap10_lec12/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_lec12/data.json</guid>
+      <description>Lecture presentation on multithreaded programming, Pthreads, API, Mutex, and conditional variables.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 13</title>
+      <link>/resources/mit6_087iap10_lec13/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_lec13/data.json</guid>
+      <description>Lecture presentation on multithreaded programming, race conditions, semaphores, thread safety, deadlock, and starvation, sockets, and asynchronous I/O.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 14</title>
+      <link>/resources/mit6_087iap10_lec14/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_lec14/data.json</guid>
+      <description>Lecture presentation o Linux inter process communication, signals, fork(), pipes, FIFO, and project spotlights.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 2</title>
+      <link>/resources/mit6_087iap10_lec02/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_lec02/data.json</guid>
+      <description>Lecture presentation on the basics of programming in C, variables, data types, operators, expressions, functions, type conversions, precedence, and order of evaluation.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 3</title>
+      <link>/resources/mit6_087iap10_lec03/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_lec03/data.json</guid>
+      <description>Lecture presentation on blocks and compound statements, control flow, conditional statements, loops, functions, modular programming, variable scope, and static, global, and register variables.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 4</title>
+      <link>/resources/mit6_087iap10_lec04/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_lec04/data.json</guid>
+      <description>Lecture presentation on programming in C, control flow, and standard input and output.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 5</title>
+      <link>/resources/mit6_087iap10_lec05/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_lec05/data.json</guid>
+      <description>Lecture presentation on pointers and memory addresses, physical and virtual memory, addressing and indirection, functions with multiple outputs, arrays and pointer arithmetic, strings, string utility functions, searching and sorting algorithms, linear search, a simple sort, faster sorting, and binary search.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 6</title>
+      <link>/resources/mit6_087iap10_lec06/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_lec06/data.json</guid>
+      <description>Lecture presentation on user deﬁned datatypes, structures, unions, bitﬁelds, memory allocation, linked lists, and binary trees.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 7</title>
+      <link>/resources/mit6_087iap10_lec07/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_lec07/data.json</guid>
+      <description>Lecture presentation on programming in C, pointers, pointers to pointers, ointer arrays, multidimensional arrays, data structures, stacks, queues, and programming a simple calculator.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 8</title>
+      <link>/resources/mit6_087iap10_lec08/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_lec08/data.json</guid>
+      <description>Lecture presentation on pointers, void pointers, function pointers, and hash tables.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 9</title>
+      <link>/resources/mit6_087iap10_lec09/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_lec09/data.json</guid>
+      <description>Lecture presentation on void pointers, function pointers, hash tables, using external libraries, symbols and linkage, static versus dynamic linkage, linking external libraries, symbol resolution issues, creating libraries, data structures, B-trees, and priority queues.</description>
+    </item>
+    
+    <item>
+      <title>Lecture Notes</title>
+      <link>/pages/lecture-notes/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pages/lecture-notes/data.json</guid>
+      <description>The actual size of these slides is 12.8 cm by 9.6 cm. Use Adobe Reader&amp;rsquo;s print options to scale the slide to fit the page before printing.
+LEC # TOPICS LECTURE NOTES 1 Introduction. Writing, compiling, and debugging C programs. Hello world. (PDF) 2 Variables and datatypes, operators. (PDF) 3 Control flow. Functions and modular programming. Variable scope. Static and global variables. (PDF) 4 More control flow. Input and output. (PDF) 5 Pointers and memory addressing.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on MIT OpenCourseWare</title>
+    <link>/resources/projects/</link>
+    <description>Recent content in Projects on MIT OpenCourseWare</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/resources/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Final Project</title>
+      <link>/pages/final-project/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pages/final-project/data.json</guid>
+      <description>Your task is to make something nifty using primarily C or C++. The title of your project should be a statement of the problem it solves. For example:
+&amp;ldquo;I don&amp;rsquo;t have an egg timer GUI that plays a cool sound.&amp;rdquo; &amp;ldquo;There&amp;rsquo;s no game about placing pepperonis on pizza without any of them touching.&amp;rdquo; &amp;ldquo;Not every photo of a person&amp;rsquo;s face has a hat.&amp;rdquo; &amp;ldquo;None of the N-Queens solvers were written by me.</description>
+    </item>
+    
+    <item>
+      <title>Starter Kit</title>
+      <link>/pages/final-project/starter-kit/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pages/final-project/starter-kit/data.json</guid>
+      <description>Starting a C or C++ project from scratch can be a daunting task. If you&amp;rsquo;re having trouble picking a software library, installing it on your system, and testing that it works, maybe you should try this Starter Kit!
+This Starter Kit uses the libpng library to render a series of random lines as a PNG image. The images look like this:
+The example code was written by skimming the section of the libpng manual (PDF) on how to write PNG files.</description>
+    </item>
+    
+  </channel>
+</rss>

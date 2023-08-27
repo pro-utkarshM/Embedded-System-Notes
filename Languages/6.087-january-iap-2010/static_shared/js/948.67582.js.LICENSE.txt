@@ -1,0 +1,39 @@
+/*!
+ * imagesLoaded PACKAGED v4.1.1
+ * JavaScript is all like "You images are done yet or what?"
+ * MIT License
+ */
+
+/*!
+ * ngimagesLoaded v4.1.1
+ * JavaScript is all like "You images are done yet or what?"
+ * MIT License
+ */
+
+/*! NGHammer.JS - v2.0.7 - 2016-04-22
+ * http://hammerjs.github.io/
+ *
+ * Copyright (c) 2016 Jorik Tangelder;
+ * Licensed under the MIT license */
+
+/**!
+ * @preserve nanogallery2 - javascript photo / video gallery and lightbox
+ * Homepage: http://nanogallery2.nanostudio.org
+ * Sources:  https://github.com/nanostudio-org/nanogallery2
+ *
+ * License:  GPLv3 and commercial licence
+ * 
+ * Requirements:
+ *  - jQuery (http://www.jquery.com) - version >= 1.7.1
+ *
+ * Embeded components:
+ *  - shifty (https://github.com/jeremyckahn/shifty)
+ *  - imagesloaded (https://github.com/desandro/imagesloaded)
+ *  - hammer.js (http://hammerjs.github.io/)
+ *  - screenfull.js (https://github.com/sindresorhus/screenfull.js)
+ * Tools:
+ *  - webfont generated with http://fontello.com - mainly based on Font Awesome Copyright (C) 2012 by Dave Gandy (http://fontawesome.io/)
+ *  - ICO online converter: https://iconverticons.com/online/
+ */
+
+// thanks to @lichtamberg - https://github.com/lichtamberg

@@ -1,0 +1,6 @@
+
+{
+  "title":"Lecture Notes",
+  "content":"The actual size of these slides is 12.8 cm by 9.6 cm. Use Adobe Reader\u0026rsquo;s print options to scale the slide to fit the page before printing.\nLEC # TOPICS LECTURE NOTES 1 Introduction. Writing, compiling, and debugging C programs. Hello world. (PDF) 2 Variables and datatypes, operators. (PDF) 3 Control flow. Functions and modular programming. Variable scope. Static and global variables. (PDF) 4 More control flow. Input and output. (PDF) 5 Pointers and memory addressing. Arrays and pointer arithmetic. Strings. Searching and sorting algorithms. (PDF) 6 User-defined datatypes, structs, unions, bitfields. Memory allocation. Linked lists, binary trees. (PDF) 7 Pointers to pointers, pointer and string arrays, multidimensional arrays. Stacks and queues. (PDF) 8 Void and function pointers. Hash tables. (PDF) 9 External libraries. B-trees, priority queues. (PDF) 10 C standard library: stdio.h, ctype.h, stdlib.h, assert.h, stdarg.h, time.h (PDF) 11 Dynamic memory allocation, malloc and valgrind, garbage collection. (PDF) 12 Multithreading and concurrency. (PDF) 13 Multithreaded programming. Sockets and asynchronous I/O. (PDF) 14 Linux inter process communication. (PDF) "}
+
+

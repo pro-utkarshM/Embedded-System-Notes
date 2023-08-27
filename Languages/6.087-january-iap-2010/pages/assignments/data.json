@@ -1,0 +1,6 @@
+
+{
+  "title":"Assignments",
+  "content":" ASSN # TOPICS ASSIGNMENTS SOLUTIONS 1 Writing, compiling, and debugging programs; preprocessor macros; C file structure; variables; functions and problem statements; returning from functions (PDF) (PDF) 2 Types, operators, expressions (PDF) (PDF) 3 Control flow, functions, variable scope, static and global variables, I/O: printf and scanf, file I/O, character arrays, error handling, labels and goto (PDF)\n(ZIP) (This ZIP file contains: 1 .txt file and 2 .c files.)\n(PDF) 4 Pointers, arrays, strings, searching and sorting algorithms (PDF) (PDF) 5 Linked lists, trees (PDF) (PDF) 6a Pointers to pointers, multidimensional arrays, stacks and queues (PDF)\n(ZIP) (This ZIP file contains: 1 .txt file and 2 .c files.)\n(PDF) 6b Function pointers, hash table (PDF)\n(ZIP) (This ZIP file contains: 1 .txt file and 2 .c files.)\n(PDF) 7 Using and creating libraries, B-trees and priority queues (PDF)\n(ZIP) (This ZIP file contains: 2 .c files and 1 .db file.)\n(ZIP) (This ZIP file contains: 5 .txt files and 5 .c files.) "}
+
+

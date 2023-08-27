@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Labs on MIT OpenCourseWare</title>
+    <link>/resources/labs/</link>
+    <description>Recent content in Labs on MIT OpenCourseWare</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/resources/labs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Final Project</title>
+      <link>/resources/mit6_087iap10_project/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_project/data.json</guid>
+      <description>Final project to build a C application leveraging one or more open-source libraries.</description>
+    </item>
+    
+    <item>
+      <title>Lab 1: Game of Life</title>
+      <link>/resources/mit6_087iap10_lab01/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_lab01/data.json</guid>
+      <description>Lab assignment to implement John Conway&amp;rsquo;s Game of Life as a C program.</description>
+    </item>
+    
+    <item>
+      <title>Lab 2: Data compression</title>
+      <link>/resources/mit6_087iap10_lab02/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_lab02/data.json</guid>
+      <description>Lab assignment to implement a Huffman decoder using C to compress a data file.</description>
+    </item>
+    
+    <item>
+      <title>lab01</title>
+      <link>/resources/lab01/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/lab01/data.json</guid>
+      <description>Supporting files for a lab assignment to implement John Conway&amp;rsquo;s Game of Life as a C program. (This ZIP file contains: 3 .txt files, 3 .c files, and 1 .h file.)</description>
+    </item>
+    
+    <item>
+      <title>lab01_sol</title>
+      <link>/resources/lab01_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/lab01_sol/data.json</guid>
+      <description>Solution files for a lab assignment to implement John Conway&amp;rsquo;s Game of Life as a C program. (This ZIP file contains: 1 .txt file, 1 .h file and 4 .c files.)</description>
+    </item>
+    
+    <item>
+      <title>lab02</title>
+      <link>/resources/lab02/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/lab02/data.json</guid>
+      <description>Supporting files for a lab assignment to implement a Huffman decoder using C to compress a data file. (This ZIP file contains: 4 .txt files and 2 .c files.)</description>
+    </item>
+    
+    <item>
+      <title>Labs</title>
+      <link>/pages/labs/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pages/labs/data.json</guid>
+      <description>This section contains the labs and final project.
+Lab Assignments LAB # LABS SOLUTIONS Lab 1: Game of life (PDF)
+(ZIP) (This ZIP file contains: 3 .txt files, 3 .c files and 1 .h file.)
+(ZIP) (This ZIP file contains: 1 .txt file, 1 .h file and 4 .c files.) Lab 2: Data compression (PDF)
+(ZIP) (This ZIP file contains: 4 .txt files and 2 .c files.)
+Final Project Final project description (PDF)</description>
+    </item>
+    
+  </channel>
+</rss>

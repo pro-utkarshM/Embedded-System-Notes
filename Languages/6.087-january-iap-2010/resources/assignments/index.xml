@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Assignments on MIT OpenCourseWare</title>
+    <link>/resources/assignments/</link>
+    <description>Recent content in Assignments on MIT OpenCourseWare</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/resources/assignments/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Assignments</title>
+      <link>/pages/assignments/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pages/assignments/data.json</guid>
+      <description>ASSN # TOPICS ASSIGNMENTS SOLUTIONS 1 Writing, compiling, and debugging programs; preprocessor macros; C file structure; variables; functions and problem statements; returning from functions (PDF) (PDF) 2 Types, operators, expressions (PDF) (PDF) 3 Control flow, functions, variable scope, static and global variables, I/O: printf and scanf, file I/O, character arrays, error handling, labels and goto (PDF)
+(ZIP) (This ZIP file contains: 1 .txt file and 2 .c files.)
+(PDF) 4 Pointers, arrays, strings, searching and sorting algorithms (PDF) (PDF) 5 Linked lists, trees (PDF) (PDF) 6a Pointers to pointers, multidimensional arrays, stacks and queues (PDF)</description>
+    </item>
+    
+    <item>
+      <title>assn03</title>
+      <link>/resources/assn03/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/assn03/data.json</guid>
+      <description>Supporting files for a poblem set on programming in C, control ﬂow, functions, variable scope, static and global variables, I/O, printf and scanf, file I/O, character arrays, error handling, labels, and goto.</description>
+    </item>
+    
+    <item>
+      <title>assn06a</title>
+      <link>/resources/assn06a/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/assn06a/data.json</guid>
+      <description>Supporting files for a problem set on programming in C, pointers to pointers, multidimensional arrays, stacks, and queues. (This ZIP file contains: 1 .txt file and 2 .c files.)</description>
+    </item>
+    
+    <item>
+      <title>assn06b</title>
+      <link>/resources/assn06b/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/assn06b/data.json</guid>
+      <description>Supporting files for a problem set on function pointers and hash tables. (This ZIP file contains: 1 .txt file and 2 .c files.)</description>
+    </item>
+    
+    <item>
+      <title>assn07</title>
+      <link>/resources/assn07/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/assn07/data.json</guid>
+      <description>Supporting files to a problem set on programming in C, using and creating libraries, B-trees, and priority queues. (This ZIP file contains: 2 .c files and 1 .db file.)</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 1</title>
+      <link>/resources/mit6_087iap10_assn01/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_assn01/data.json</guid>
+      <description>Problem set on writing, compiling, and debugging C programs, preprocessor macros, the C ﬁle structure, variables, functions and program statements, and returning from functions.</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 1 — Solutions</title>
+      <link>/resources/mit6_087iap10_assn01_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_assn01_sol/data.json</guid>
+      <description>Solutions to a problem set on writing, compiling, and debugging C programs, preprocessor macros, the C ﬁle structure, variables, functions and program statements, and returning from functions.</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 2</title>
+      <link>/resources/mit6_087iap10_assn02/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_assn02/data.json</guid>
+      <description>Problem set on programming in C, data types, operators, and expressions.</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 2 — Solutions</title>
+      <link>/resources/mit6_087iap10_assn02_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_assn02_sol/data.json</guid>
+      <description>Solutions to a problem set on programming in C, data types, operators, and expressions.</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 3</title>
+      <link>/resources/mit6_087iap10_assn03/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_assn03/data.json</guid>
+      <description>Problem set on programming in C, control ﬂow, functions, variable scope, static and global variables, I/O, printf and scanf, file I/O, character arrays, error handling, labels, and goto. (This ZIP file contains: 1 .txt file and 2 .c files.)</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 3 — Solutions</title>
+      <link>/resources/mit6_087iap10_assn03_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_assn03_sol/data.json</guid>
+      <description>Solutions to a poblem set on programming in C, control ﬂow, functions, variable scope, static and global variables, I/O, printf and scanf, file I/O, character arrays, error handling, labels, and goto.</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 4 </title>
+      <link>/resources/mit6_087iap10_assn04/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_assn04/data.json</guid>
+      <description>Problem set on programming in C, pointers, arrays, strings, and searching and sorting algorithms.</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 4 — Solutions</title>
+      <link>/resources/mit6_087iap10_assn04_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_assn04_sol/data.json</guid>
+      <description>Solutions to a problem set on programming in C, pointers, arrays, strings, and searching and sorting algorithms.</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 5</title>
+      <link>/resources/mit6_087iap10_assn05/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_assn05/data.json</guid>
+      <description>Problem set on programming in C, linked lists, and binary trees.</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 5 — Solutions</title>
+      <link>/resources/mit6_087iap10_assn05_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_assn05_sol/data.json</guid>
+      <description>Solutions to a problem set on programming in C, linked lists, and binary trees.</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 6</title>
+      <link>/resources/mit6_087iap10_assn06a/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_assn06a/data.json</guid>
+      <description>Problem set on programming in C, pointers to pointers, multidimensional arrays, stacks, and queues.</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 6: Part 1 — Solutions</title>
+      <link>/resources/mit6_087iap10_assn06a_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_assn06a_sol/data.json</guid>
+      <description>Solutions to a problem set on programming in C, pointers to pointers, multidimensional arrays, stacks, and queues.</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 6: Part 2</title>
+      <link>/resources/mit6_087iap10_assn06b/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_assn06b/data.json</guid>
+      <description>Problem set on function pointers and hash tables.</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 6: Part 2 – Solutions </title>
+      <link>/resources/mit6_087iap10_assn06b_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_assn06b_sol/data.json</guid>
+      <description>Solutions to a problem set on function pointers and hash tables.</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 7</title>
+      <link>/resources/mit6_087iap10_assn07/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit6_087iap10_assn07/data.json</guid>
+      <description>Problem set on programming in C, using and creating libraries, B-trees, and priority queues.</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 7 Solutions</title>
+      <link>/resources/assn07_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/assn07_sol/data.json</guid>
+      <description>Solution files to a problem set on programming in C, using and creating libraries, B-trees, and priority queues. (This ZIP file contains: 5 .txt files and 5 .c files.)</description>
+    </item>
+    
+  </channel>
+</rss>

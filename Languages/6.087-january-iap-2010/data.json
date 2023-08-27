@@ -1,0 +1,25 @@
+{
+  "course_title":"Practical Programming in C",
+  "course_description":"This course provides a thorough introduction to the C programming language, the workhorse of the UNIX operating system and lingua franca of embedded processors and micro-controllers. The first two weeks will cover basic syntax and grammar, and expose students to practical programming techniques. The remaining lectures will focus on more advanced concepts, such as dynamic memory allocation, concurrency and synchronization, UNIX signals and process control, library development and usage. Daily programming assignments and weekly laboratory exercises are required. Knowledge of C is highly marketable for summer internships, UROPs, and full-time positions in software and embedded systems development.\n",
+  "site_uid":"b6871c09-38d6-4c71-b51e-51fe30ac2375",
+  "legacy_uid":"f40c1db7-cbfd-7a41-ee5d-56d6f35e7a1f","instructors": [{
+    "first_name":"Daniel",
+    "last_name":"Weller",
+    "middle_initial":"",
+    "salutation":"",
+    "title":"Daniel Weller"},{
+    "first_name":"Sharat",
+    "last_name":"Chikkerur",
+    "middle_initial":"",
+    "salutation":"",
+    "title":"Sharat Chikkerur"}],"department_numbers":["6"],
+  "learning_resource_types":["Lecture Notes","Projects","Programming Assignments with Examples"],
+  "topics":[["Engineering","Computer Science","Programming Languages"],["Engineering","Computer Science","Software Design and Engineering"]],
+  "primary_course_number":"6.087",
+  "extra_course_numbers":"",
+  "term":"January IAP",
+  "year":"2010",
+  "level":["Undergraduate"],
+  "image_src":"./static_resources/ea7cfb3f6b1dc004d37c0b06ac102e62_6-087iap10.jpg",
+  "course_image_metadata":{"content_type":"resource","description":"In problem set 7, which focuses on libraries, B-trees, and priority queues, students work with a movie database. Image courtesy of Jeezny on Flickr.","draft":false,"file":"/courses/6-087-practical-programming-in-c-january-iap-2010/ea7cfb3f6b1dc004d37c0b06ac102e62_6-087iap10.jpg","file_type":"image/jpeg","image_metadata":{"caption":"In problem set 7, which focuses on libraries, B-trees, and priority queues, students work with a movie database. (Image courtesy of Jeezny on Flickr.)","credit":"","image-alt":"Photograph of two stacks of movies."},"iscjklanguage":false,"learning_resource_types":[],"license":"https://creativecommons.org/licenses/by-nc-sa/4.0/","ocw_type":"OCWImage","resourcetype":"Image","title":"Photograph of two stacks of movies","uid":"ea7cfb3f-6b1d-c004-d37c-0b06ac102e62"}}
+

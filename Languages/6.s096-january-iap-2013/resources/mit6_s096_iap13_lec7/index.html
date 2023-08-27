@@ -1,0 +1,1794 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NMQZ25T');</script>
+    
+  
+  
+
+
+
+
+    
+    <link href="../../static_shared/css/course_offline.67582.css" rel="stylesheet">
+    
+
+
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  
+
+  <meta name="description" content="This resource contains information regarding parent destructors, C&#43;&#43; casts, references, namespaces, operator overloading, streams.">
+  <meta name="keywords" content="opencourseware,MIT OCW,courseware,MIT opencourseware,Free Courses,class notes,class syllabus,class materials,tutorials,online courses,MIT courses">
+  
+  <meta property="og:site_name" content="MIT OpenCourseWare">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ocw.mit.edu/https://ocw.mit.edu/resources/mit6_s096_iap13_lec7/" />
+  <meta property="og:title" content="6.S096 Lecture 7: Assorted Topics | Introduction to C and C&#43;&#43; | Electrical Engineering and Computer Science | MIT OpenCourseWare" />
+  <meta property="og:description" content="This resource contains information regarding parent destructors, C&#43;&#43; casts, references, namespaces, operator overloading, streams." />
+
+  
+
+<meta property="og:image" content="https://ocw.mit.edu/courses/6-s096-introduction-to-c-and-c-january-iap-2013/dc7d141c865352edae2509739884f34e_6-s096iap13.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mitocw" />
+<meta name="twitter:image:src" content="https://ocw.mit.edu/courses/6-s096-introduction-to-c-and-c-january-iap-2013/dc7d141c865352edae2509739884f34e_6-s096iap13.jpg" />
+  
+  <link rel="canonical" href="https://ocw.mit.edu/https://ocw.mit.edu/resources/mit6_s096_iap13_lec7/" />
+
+  <script type="application/ld+json">
+      {
+        "@context": "http://schema.org/",
+        "@type" : "WebPage",
+        "name": "MIT OpenCourseWare",
+        "description": "This resource contains information regarding parent destructors, C\u002b\u002b casts, references, namespaces, operator overloading, streams.",
+        "license": "http://creativecommons.org/licenses/by-nc-sa/4.0/", 
+        "publisher": {
+          "@type": "CollegeOrUniversity",
+          "name": "MIT OpenCourseWare"
+        }
+      }
+  </script>
+
+  <title>6.S096 Lecture 7: Assorted Topics | Introduction to C and C&#43;&#43; | Electrical Engineering and Computer Science | MIT OpenCourseWare</title>
+  
+  
+
+
+    
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+  <style>
+  @font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(../../static_shared/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+      url(../../static_shared/fonts/MaterialIcons-Regular.woff) format('woff'),
+      url(../../static_shared/fonts/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Material Icons Round';
+    font-style: normal;
+    font-weight: 400;
+    src: local("MaterialIcons-Round"),
+    url(../../static_shared/fonts/MaterialIconsRound-Regular.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Cardo Bold';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Cardo'),
+      local('Cardo-Bold'),
+      url(../../static_shared/fonts/Cardo-Bold.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Cardo Italic';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Cardo'),
+      local('Cardo-Italic'),
+      url(../../static_shared/fonts/Cardo-Italic.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Helvetica Light';
+    font-style: normal`;
+    font-weight: 400;
+    src: local('Helvetica Light'),
+      local('Helvetica-Light'),
+      url(../../static_shared/fonts/Helvetica-Light.ttf) format('truetype');
+  }
+  </style>
+</head>
+
+<body class="course-home-page">
+  
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMQZ25T"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+  
+  <div class="overflow-auto">
+    <div
+  id="mobile-course-nav"
+  class="navbar-offcanvas offcanvas-toggle offcanvas-toggle-close medium-and-below-only drawer">
+  <h3 class="my-4 d-flex align-items-center justify-content-between">
+    Browse Course Material
+    <button
+      class="btn"
+      type="button"
+      aria-label="Close Course Menu"
+      onclick="$('#mobile-course-nav-toggle').click();"
+      >
+      <img
+        src="../../static_shared/images/close_small.svg"
+        alt=""
+        width="12px"
+      />
+    </button>
+  </h3>
+  
+
+<nav class="course-nav">
+  <ul class="w-100 m-auto list-unstyled">
+    
+      
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="01ee04e1-38b0-9ea0-c906-e9d57f619319"
+        href="../../pages/syllabus/index.html">
+        Syllabus and Software
+      </a>
+    </span>
+    
+  </div>
+  
+  <span class="medium-and-below-only"><hr/></span>
+  
+  <div class="collapse"
+    id="nav-container_mobile_01ee04e1-38b0-9ea0-c906-e9d57f619319">
+    <ul class="course-nav-child-nav m-auto">
+      
+    </ul>
+  </div>
+</li>
+
+    
+      
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="1d0729a5-9d9f-5e99-126f-6cea8d53b518"
+        href="../../pages/lectures-and-assignments/index.html">
+        Lectures and Assignments
+      </a>
+    </span>
+    
+    <a class="course-nav-section-toggle"
+      href="#nav-container_mobile_1d0729a5-9d9f-5e99-126f-6cea8d53b518"
+      data-toggle="collapse"
+      aria-controls="nav-container_mobile_1d0729a5-9d9f-5e99-126f-6cea8d53b518"
+      aria-expanded=""
+      data-uuid="1d0729a5-9d9f-5e99-126f-6cea8d53b518">
+      <i class="material-icons md-18"></i>
+    </a>
+    
+  </div>
+  
+  <span class="medium-and-below-only"><hr/></span>
+  
+  <div class="collapse"
+    id="nav-container_mobile_1d0729a5-9d9f-5e99-126f-6cea8d53b518">
+    <ul class="course-nav-child-nav m-auto">
+      
+        
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="f0acd411-10d1-ccdc-6d70-3d6ea2bfac40"
+        href="../../pages/lectures-and-assignments/compilation-pipeline/index.html">
+        Compilation Pipeline
+      </a>
+    </span>
+    
+  </div>
+  
+  <div class="collapse"
+    id="nav-container_mobile_f0acd411-10d1-ccdc-6d70-3d6ea2bfac40">
+    <ul class="course-nav-child-nav m-auto">
+      
+    </ul>
+  </div>
+</li>
+
+      
+        
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="055a6a4e-4abd-91c3-6e69-fb5bc0e07a03"
+        href="../../pages/lectures-and-assignments/core-c-control-structures-variables-scope-and-uninitialized-memory/index.html">
+        Core C
+      </a>
+    </span>
+    
+  </div>
+  
+  <div class="collapse"
+    id="nav-container_mobile_055a6a4e-4abd-91c3-6e69-fb5bc0e07a03">
+    <ul class="course-nav-child-nav m-auto">
+      
+    </ul>
+  </div>
+</li>
+
+      
+        
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="66ba4420-12a6-1549-5e33-42c9cfdf9aa2"
+        href="../../pages/lectures-and-assignments/c-memory-management/index.html">
+        C Memory Management
+      </a>
+    </span>
+    
+  </div>
+  
+  <div class="collapse"
+    id="nav-container_mobile_66ba4420-12a6-1549-5e33-42c9cfdf9aa2">
+    <ul class="course-nav-child-nav m-auto">
+      
+    </ul>
+  </div>
+</li>
+
+      
+        
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="b3ef0975-08f4-37ed-8fbe-d839cfaa1e5d"
+        href="../../pages/lectures-and-assignments/data-structures-debugging/index.html">
+        Data Structures, Debugging
+      </a>
+    </span>
+    
+  </div>
+  
+  <div class="collapse"
+    id="nav-container_mobile_b3ef0975-08f4-37ed-8fbe-d839cfaa1e5d">
+    <ul class="course-nav-child-nav m-auto">
+      
+    </ul>
+  </div>
+</li>
+
+      
+        
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="f6afd55a-3350-f806-04e5-f89e1f90cc5f"
+        href="../../pages/lectures-and-assignments/c-introduction-classes-and-templates/index.html">
+        C&#43;&#43; Introduction, Classes, and Templates
+      </a>
+    </span>
+    
+  </div>
+  
+  <div class="collapse"
+    id="nav-container_mobile_f6afd55a-3350-f806-04e5-f89e1f90cc5f">
+    <ul class="course-nav-child-nav m-auto">
+      
+    </ul>
+  </div>
+</li>
+
+      
+        
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="f70e7442-f692-8d5e-4454-66e50eba0b4f"
+        href="../../pages/lectures-and-assignments/c-inheritance/index.html">
+        C&#43;&#43; Inheritance
+      </a>
+    </span>
+    
+  </div>
+  
+  <div class="collapse"
+    id="nav-container_mobile_f70e7442-f692-8d5e-4454-66e50eba0b4f">
+    <ul class="course-nav-child-nav m-auto">
+      
+    </ul>
+  </div>
+</li>
+
+      
+    </ul>
+  </div>
+</li>
+
+    
+      
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="43e815cb-25bc-972c-4ad2-bcd5545036c5"
+        href="../../pages/final-project/index.html">
+        Final Project
+      </a>
+    </span>
+    
+    <a class="course-nav-section-toggle"
+      href="#nav-container_mobile_43e815cb-25bc-972c-4ad2-bcd5545036c5"
+      data-toggle="collapse"
+      aria-controls="nav-container_mobile_43e815cb-25bc-972c-4ad2-bcd5545036c5"
+      aria-expanded=""
+      data-uuid="43e815cb-25bc-972c-4ad2-bcd5545036c5">
+      <i class="material-icons md-18"></i>
+    </a>
+    
+  </div>
+  
+  <span class="medium-and-below-only"><hr/></span>
+  
+  <div class="collapse"
+    id="nav-container_mobile_43e815cb-25bc-972c-4ad2-bcd5545036c5">
+    <ul class="course-nav-child-nav m-auto">
+      
+        
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="95373ee7-c310-c36e-3ac2-a00d9b23d8bf"
+        href="../../pages/final-project/starter-kit/index.html">
+        Starter Kit
+      </a>
+    </span>
+    
+  </div>
+  
+  <div class="collapse"
+    id="nav-container_mobile_95373ee7-c310-c36e-3ac2-a00d9b23d8bf">
+    <ul class="course-nav-child-nav m-auto">
+      
+    </ul>
+  </div>
+</li>
+
+      
+    </ul>
+  </div>
+</li>
+
+    
+  </ul>
+</nav>
+
+</div>
+
+    <div
+  id="course-info-drawer"
+  class="bg-faded pt-3 bg-light navbar-offcanvas navbar-offcanvas-right medium-and-below-only drawer"
+>
+  <div class="col-12">
+    <button
+      class="btn close-mobile-course-info"
+      type="button"
+      aria-label="Close Course Info"
+      onclick="$('#mobile-course-info-toggle').click();"
+      >
+      <img
+        class=""
+        src="../../static_shared/images/close_small.svg"
+        alt=""
+        width="12px"
+      />
+    </button>
+  </div>
+    
+
+<div class="course-info">
+  <div class="course-detail-title bg-light-gray">
+    <div class="d-flex">
+      <h2 class="font-black py-1 pl-3 mt-2 m-0">
+        Course Info
+      </h2>
+      
+      <button
+        type="button"
+        class="btn close-course-info large-and-above-only"
+        id=""
+        aria-label="Close Course Info"
+        >
+        <img
+          class="toggle navbar-toggle offcanvas-toggle"
+          src="../../static_shared/images/close_small.svg"
+          alt=""
+          width="12px"
+        />
+      </button>
+      
+    </div>
+  </div>
+  <div class="position-relative px-3 mt-4">
+    <div class="row">
+      <div class="col-12 ">
+        
+        <div class="">
+          
+          <h5 class="panel-course-info-title ">
+            Instructors
+            </h5>
+          <div class="course-info-content panel-course-info-text">
+            
+
+
+
+
+<ul class="list-unstyled m-0">
+  
+  
+  
+    
+  
+  <li>
+    <a class="course-info-instructor strip-link-offline"  href="https://ocw.mit.edu/search?q=Tom&#43;Lieber">Tom Lieber</a>
+  </li>
+  
+  
+  
+    
+  
+  <li>
+    <a class="course-info-instructor strip-link-offline"  href="https://ocw.mit.edu/search?q=Kyle&#43;Murray">Kyle Murray</a>
+  </li>
+  
+  
+  
+    
+  
+  <li>
+    <a class="course-info-instructor strip-link-offline"  href="https://ocw.mit.edu/search?q=Frank&#43;Li">Frank Li</a>
+  </li>
+  
+</ul>
+
+
+          </div>
+        </div>
+         
+        <div class="mt-4">
+          
+          <h5 class="panel-course-info-title ">
+            Departments
+          </h5>
+          <div class="course-info-content panel-course-info-text">
+            
+
+
+
+
+<ul class="list-unstyled m-0">
+  
+  
+  
+    
+  
+  <li>
+    <a class="course-info-department strip-link-offline"  href="https://ocw.mit.edu/search?d=Electrical&#43;Engineering&#43;and&#43;Computer&#43;Science">Electrical Engineering and Computer Science</a>
+  </li>
+  
+</ul>
+
+
+          </div>
+        </div>
+         
+        
+        <div class="mt-4">
+          <h5 class="panel-course-info-title ">
+            As Taught In
+          </h5>
+          <div class="course-info-content panel-course-info-text">
+            January IAP
+            
+              2013
+            
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <h5 class="panel-course-info-title ">
+            Level
+          </h5>
+          <div class="course-info-content panel-course-info-text">
+            
+              
+                <a class=" strip-link-offline"  href="https://ocw.mit.edu/search?l=Undergraduate">Undergraduate</a><br />
+              
+            
+          </div>
+        </div>
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+  
+
+
+
+
+
+<div class=" mt-4">
+  <h5 class="panel-course-info-title ">
+    Topics
+  </h5>
+  <ul class="list-unstyled pb-2 m-0 panel-course-info-text">
+      <li>
+
+
+
+
+
+
+
+<div class="position-relative pt-1 pb-1 pl-4 ml-n2 ">
+  
+  <a class="topic-toggle"
+    href="#subtopic-container_mobile_0"
+    data-toggle="collapse"
+    aria-controls="subtopic-container_mobile_0"
+    aria-expanded="true">
+    <i aria-hidden="true" class="material-icons"></i>
+  </a>
+  
+  <span class="topic-text-wrapper">
+    
+    <a class="text-black course-info-topic strip-link-offline"  href="https://ocw.mit.edu/search?t=Engineering">Engineering</a></span>
+</div>
+
+<div class="pl-4 subtopic-container collapse show" id="subtopic-container_mobile_0">
+  
+  
+  
+  <div class="position-relative pt-1 pb-1  pl-4 ">
+    
+    <a class="topic-toggle"
+      href="#speciality-container_mobile_0_0"
+      data-toggle="collapse"
+      aria-controls="speciality-container_mobile_0_0"
+      aria-expanded="true">
+      <i aria-hidden="true" class="material-icons"></i>
+    </a>
+    
+    <span class="topic-text-wrapper">
+      
+      <a class="text-black course-info-topic strip-link-offline"  href="https://ocw.mit.edu/search?t=Computer&#43;Science">Computer Science</a></span>
+  </div>
+  <div class="collapse show" id="speciality-container_mobile_0_0">
+    
+    <div class="pt-1 pb-1 pl-5">
+      <span class="topic-text-wrapper">
+        
+        <a class="text-black course-info-topic strip-link-offline"  href="https://ocw.mit.edu/search?t=Programming&#43;Languages">Programming Languages</a></span>
+    </div>
+    
+    <div class="pt-1 pb-1 pl-5">
+      <span class="topic-text-wrapper">
+        
+        <a class="text-black course-info-topic strip-link-offline"  href="https://ocw.mit.edu/search?t=Software&#43;Design&#43;and&#43;Engineering">Software Design and Engineering</a></span>
+    </div>
+    
+  </div>
+  
+  
+</div>
+
+</li>
+      
+  </ul>
+</div>
+
+  
+
+
+
+<div class="">
+  <h5 class="course-detail-title panel-course-info-title mt-3">
+    Learning Resource Types
+  </h5>
+  <div>
+    <div class="row d-inline m-0">
+      
+        <div class="panel-course-info-text my-2">
+          
+
+<div class="">
+  <div class="d-flex">
+    <i aria-hidden="true" class="material-icons pr-1">assignment</i>
+    <span>Problem Sets</span>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="panel-course-info-text my-2">
+          
+
+<div class="">
+  <div class="d-flex">
+    <i aria-hidden="true" class="material-icons pr-1">notes</i>
+    <span>Lecture Notes</span>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="panel-course-info-text my-2">
+          
+
+<div class="">
+  <div class="d-flex">
+    <i aria-hidden="true" class="material-icons pr-1">group_work</i>
+    <span>Projects</span>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="panel-course-info-text my-2">
+          
+
+<div class="">
+  <div class="d-flex">
+    <i aria-hidden="true" class="material-icons pr-1">assignment_turned_in</i>
+    <span>Programming Assignments with Examples</span>
+  </div>
+</div>
+
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+
+  
+
+
+</div>
+
+    
+
+
+
+
+
+<div id="mobile-header" class="position-relative bg-black medium-and-below-only">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black d-flex">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="material-icons display-4 text-white align-bottom">menu</i>
+    </button>
+    <div class="mx-auto">
+      <a href="https://ocw.mit.edu/">
+        <img width="250" src="../../static_shared/images/ocw_logo_white_v2.svg" alt="MIT OpenCourseWare"/>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto pl-2 pt-2">
+        <li class="nav-item"></li>
+        <li class="nav-item">
+          <a class="nav-link"  href="https://giving.mit.edu/give/to/ocw/?utm_source=ocw&amp;utm_medium=homepage_banner&amp;utm_campaign=nextgen_home">Give Now</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="https://ocw.mit.edu/about">About OCW</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  target="_blank"  href="https://mitocw.zendesk.com/hc/en-us">Help &amp; Faqs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="https://ocw.mit.edu/contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+<div id="desktop-header">
+  <div class="contents">
+    <div class="left">
+      <div class="ocw-logo mr-6">
+        <a href="https://ocw.mit.edu/">
+          <img src="../../static_shared/images/ocw_logo_white_v2.svg" alt="MIT OpenCourseWare" />
+        </a>
+      </div>
+    </div>
+    <div class="right">
+      
+      <a class="give-button-header font-weight-bold py-2 px-3"  href="https://giving.mit.edu/give/to/ocw/?utm_source=ocw&amp;utm_medium=homepage_banner&amp;utm_campaign=nextgen_home">give now</a>
+      <a class="text-white text-decoration-none font-weight-bold pl-5 pr-3 py-2"  href="https://ocw.mit.edu/about">about ocw</a>
+      <a class="text-white text-decoration-none font-weight-bold px-3 py-2"  target="_blank"  href="https://mitocw.zendesk.com/hc/en-us">help &amp; faqs</a>
+      <a class="text-white text-decoration-none font-weight-bold px-3 py-2"  href="https://ocw.mit.edu/contact">contact us</a>
+    </div>
+  </div>
+</div>
+
+    
+    
+
+<div id="course-banner" class="p-0">
+  <div class="max-content-width course-banner-content m-auto py-3">
+    
+    <span class="course-number-term-detail">6.S096 | January IAP 2013 | Undergraduate</span>
+    <br>
+    <h1>
+      <a
+        class="text-capitalize m-0 text-white"
+        href="../../index.html"
+      >Introduction to C and C&#43;&#43;</a>
+    </h1>
+  </div>
+</div>
+
+
+    <div id="course-main-content">
+      <div class="row">
+        <div class="col-12 course-home-grid">
+          <div class="medium-and-below-only">
+            <div class="d-flex align-items-center mb-3">
+              <div class="col-6 px-0">
+                <div>
+  <button
+    id="mobile-course-nav-toggle"
+    class="mobile-course-nav-toggle-btn d-inline-flex align-items-center offcanvas-toggle"
+    data-toggle="offcanvas"
+    data-target="#mobile-course-nav"
+  >
+    <img src="../../static_shared/images/expand.svg" alt=""/>
+    <span class="pl-1">Menu</span>
+  </button>
+</div>
+
+              </div>
+              <div class="col-6 px-0">
+                
+
+
+  <button 
+    class="btn btn-link float-right mobile-course-info-toggle-btn toggle navbar-toggle offcanvas-toggle"
+    id="mobile-course-info-toggle"
+    data-toggle="offcanvas" 
+    data-target="#course-info-drawer">
+    More Info
+  </button>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row course-cards">
+        <div class="col-2 course-home-grid large-and-above-only">  
+          <div class="card">
+  <div class="card-body pr-2">
+    
+
+<nav class="course-nav">
+  <ul class="w-100 m-auto list-unstyled">
+    
+      
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="01ee04e1-38b0-9ea0-c906-e9d57f619319"
+        href="../../pages/syllabus/index.html">
+        Syllabus and Software
+      </a>
+    </span>
+    
+  </div>
+  
+  <span class="medium-and-below-only"><hr/></span>
+  
+  <div class="collapse"
+    id="nav-container_desktop_01ee04e1-38b0-9ea0-c906-e9d57f619319">
+    <ul class="course-nav-child-nav m-auto">
+      
+    </ul>
+  </div>
+</li>
+
+    
+      
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="1d0729a5-9d9f-5e99-126f-6cea8d53b518"
+        href="../../pages/lectures-and-assignments/index.html">
+        Lectures and Assignments
+      </a>
+    </span>
+    
+    <a class="course-nav-section-toggle"
+      href="#nav-container_desktop_1d0729a5-9d9f-5e99-126f-6cea8d53b518"
+      data-toggle="collapse"
+      aria-controls="nav-container_desktop_1d0729a5-9d9f-5e99-126f-6cea8d53b518"
+      aria-expanded=""
+      data-uuid="1d0729a5-9d9f-5e99-126f-6cea8d53b518">
+      <i class="material-icons md-18"></i>
+    </a>
+    
+  </div>
+  
+  <span class="medium-and-below-only"><hr/></span>
+  
+  <div class="collapse"
+    id="nav-container_desktop_1d0729a5-9d9f-5e99-126f-6cea8d53b518">
+    <ul class="course-nav-child-nav m-auto">
+      
+        
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="f0acd411-10d1-ccdc-6d70-3d6ea2bfac40"
+        href="../../pages/lectures-and-assignments/compilation-pipeline/index.html">
+        Compilation Pipeline
+      </a>
+    </span>
+    
+  </div>
+  
+  <div class="collapse"
+    id="nav-container_desktop_f0acd411-10d1-ccdc-6d70-3d6ea2bfac40">
+    <ul class="course-nav-child-nav m-auto">
+      
+    </ul>
+  </div>
+</li>
+
+      
+        
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="055a6a4e-4abd-91c3-6e69-fb5bc0e07a03"
+        href="../../pages/lectures-and-assignments/core-c-control-structures-variables-scope-and-uninitialized-memory/index.html">
+        Core C
+      </a>
+    </span>
+    
+  </div>
+  
+  <div class="collapse"
+    id="nav-container_desktop_055a6a4e-4abd-91c3-6e69-fb5bc0e07a03">
+    <ul class="course-nav-child-nav m-auto">
+      
+    </ul>
+  </div>
+</li>
+
+      
+        
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="66ba4420-12a6-1549-5e33-42c9cfdf9aa2"
+        href="../../pages/lectures-and-assignments/c-memory-management/index.html">
+        C Memory Management
+      </a>
+    </span>
+    
+  </div>
+  
+  <div class="collapse"
+    id="nav-container_desktop_66ba4420-12a6-1549-5e33-42c9cfdf9aa2">
+    <ul class="course-nav-child-nav m-auto">
+      
+    </ul>
+  </div>
+</li>
+
+      
+        
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="b3ef0975-08f4-37ed-8fbe-d839cfaa1e5d"
+        href="../../pages/lectures-and-assignments/data-structures-debugging/index.html">
+        Data Structures, Debugging
+      </a>
+    </span>
+    
+  </div>
+  
+  <div class="collapse"
+    id="nav-container_desktop_b3ef0975-08f4-37ed-8fbe-d839cfaa1e5d">
+    <ul class="course-nav-child-nav m-auto">
+      
+    </ul>
+  </div>
+</li>
+
+      
+        
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="f6afd55a-3350-f806-04e5-f89e1f90cc5f"
+        href="../../pages/lectures-and-assignments/c-introduction-classes-and-templates/index.html">
+        C&#43;&#43; Introduction, Classes, and Templates
+      </a>
+    </span>
+    
+  </div>
+  
+  <div class="collapse"
+    id="nav-container_desktop_f6afd55a-3350-f806-04e5-f89e1f90cc5f">
+    <ul class="course-nav-child-nav m-auto">
+      
+    </ul>
+  </div>
+</li>
+
+      
+        
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="f70e7442-f692-8d5e-4454-66e50eba0b4f"
+        href="../../pages/lectures-and-assignments/c-inheritance/index.html">
+        C&#43;&#43; Inheritance
+      </a>
+    </span>
+    
+  </div>
+  
+  <div class="collapse"
+    id="nav-container_desktop_f70e7442-f692-8d5e-4454-66e50eba0b4f">
+    <ul class="course-nav-child-nav m-auto">
+      
+    </ul>
+  </div>
+</li>
+
+      
+    </ul>
+  </div>
+</li>
+
+    
+      
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="43e815cb-25bc-972c-4ad2-bcd5545036c5"
+        href="../../pages/final-project/index.html">
+        Final Project
+      </a>
+    </span>
+    
+    <a class="course-nav-section-toggle"
+      href="#nav-container_desktop_43e815cb-25bc-972c-4ad2-bcd5545036c5"
+      data-toggle="collapse"
+      aria-controls="nav-container_desktop_43e815cb-25bc-972c-4ad2-bcd5545036c5"
+      aria-expanded=""
+      data-uuid="43e815cb-25bc-972c-4ad2-bcd5545036c5">
+      <i class="material-icons md-18"></i>
+    </a>
+    
+  </div>
+  
+  <span class="medium-and-below-only"><hr/></span>
+  
+  <div class="collapse"
+    id="nav-container_desktop_43e815cb-25bc-972c-4ad2-bcd5545036c5">
+    <ul class="course-nav-child-nav m-auto">
+      
+        
+
+
+
+
+
+<li class="course-nav-list-item">
+  <div class="course-nav-parent d-flex flex-direction-row align-items-center justify-content-between">
+    <span class="course-nav-text-wrapper">
+      <a class="text-dark nav-link"
+        data-uuid="95373ee7-c310-c36e-3ac2-a00d9b23d8bf"
+        href="../../pages/final-project/starter-kit/index.html">
+        Starter Kit
+      </a>
+    </span>
+    
+  </div>
+  
+  <div class="collapse"
+    id="nav-container_desktop_95373ee7-c310-c36e-3ac2-a00d9b23d8bf">
+    <ul class="course-nav-child-nav m-auto">
+      
+    </ul>
+  </div>
+</li>
+
+      
+    </ul>
+  </div>
+</li>
+
+    
+  </ul>
+</nav>
+
+  </div>
+</div>
+
+        </div>
+        <div class="col-sm-12 col-lg-10 course-home-grid">
+          <div class="">
+            <div class="card">
+              <div class="d-flex">
+                <div class="col-12 p-0" id="main-course-section">
+                  <div class="card-body">
+                    
+                      <button 
+                        type="button" 
+                        class="btn show-course-info large-and-above-only"
+                        id="show-desktop-course-drawer"
+                        aria-label="Show Course Info"
+                        >
+                        <img src="../../static_shared/images/left_arrow.svg" alt=""/>
+                      </button>
+                     
+                    
+<div class="rounded mb-2">
+  <header>
+  <div class="course-section-title-container ">
+    <div id="course-title">
+      
+      <div class="course-content-parent-title">Lectures and Assignments</div>
+      
+      <h2 class="pb-1 mb-1">6.S096 Lecture 7: Assorted Topics</h2>
+    </div>
+  </div>
+</header>
+
+</div>
+
+<div class="resource-page container"><div class="row">
+              <div class="label col-3">Description:</div>
+              <div class="col-9"><p>This resource contains information regarding parent destructors, C++ casts, references, namespaces, operator overloading, streams.</p>
+</div>
+          </div><div class="row">
+          <div class="col-12 d-flex flex-direction-row align-items-center">
+              <a class="download-file" href="../../static_resources/1ed37da30038da4228ab883e53ee483f_MIT6_S096_IAP13_lec7.pdf"><span aria-hidden="true" class="material-icons">file_download</span> Download File</a>
+          </div>
+      </div>
+  <div class="pdf-viewer w-100 pb-5">
+  <div class="pr-4">
+    <a class="download-link" href="../../static_resources/1ed37da30038da4228ab883e53ee483f_MIT6_S096_IAP13_lec7.pdf">
+      <div class="btn bg-link-blue text-white rounded float-right mb-3">
+        <span>DOWNLOAD</span>
+        <div class="ripple-container"></div>
+      </div>
+    </a>
+  </div>
+  <div id="pdf-wrapper"></div>
+  <script type="text/javascript">
+    window.addEventListener("load", (event) => {
+      const options = {
+        width:  "100%",
+        height: "100vh",
+        fallbackLink: ""
+      }
+      window.PDFObject.embed("..\/..\/static_resources\/1ed37da30038da4228ab883e53ee483f_MIT6_S096_IAP13_lec7.pdf", "#pdf-wrapper", options)
+    })
+  </script>
+</div>
+
+  
+</div>
+
+                  </div>
+                </div>
+                
+                <div class="p-0 large-and-above-only d-none" id="desktop-course-drawer">
+                  
+                    <div class="border-left">
+  <div>
+      
+
+<div class="course-info">
+  <div class="course-detail-title bg-light-gray">
+    <div class="d-flex">
+      <h2 class="font-black py-1 pl-3 mt-2 m-0">
+        Course Info
+      </h2>
+      
+      <button
+        type="button"
+        class="btn close-course-info large-and-above-only"
+        id="hide-desktop-course-drawer"
+        aria-label="Close Course Info"
+        >
+        <img
+          class="toggle navbar-toggle offcanvas-toggle"
+          src="../../static_shared/images/close_small.svg"
+          alt=""
+          width="12px"
+        />
+      </button>
+      
+    </div>
+  </div>
+  <div class="position-relative px-3 mt-4">
+    <div class="row">
+      <div class="col-12 ">
+        
+        <div class="">
+          
+          <h5 class="panel-course-info-title ">
+            Instructors
+            </h5>
+          <div class="course-info-content panel-course-info-text">
+            
+
+
+
+
+<ul class="list-unstyled m-0">
+  
+  
+  
+    
+  
+  <li>
+    <a class="course-info-instructor strip-link-offline"  href="https://ocw.mit.edu/search?q=Tom&#43;Lieber">Tom Lieber</a>
+  </li>
+  
+  
+  
+    
+  
+  <li>
+    <a class="course-info-instructor strip-link-offline"  href="https://ocw.mit.edu/search?q=Kyle&#43;Murray">Kyle Murray</a>
+  </li>
+  
+  
+  
+    
+  
+  <li>
+    <a class="course-info-instructor strip-link-offline"  href="https://ocw.mit.edu/search?q=Frank&#43;Li">Frank Li</a>
+  </li>
+  
+</ul>
+
+
+          </div>
+        </div>
+         
+        <div class="mt-4">
+          
+          <h5 class="panel-course-info-title ">
+            Departments
+          </h5>
+          <div class="course-info-content panel-course-info-text">
+            
+
+
+
+
+<ul class="list-unstyled m-0">
+  
+  
+  
+    
+  
+  <li>
+    <a class="course-info-department strip-link-offline"  href="https://ocw.mit.edu/search?d=Electrical&#43;Engineering&#43;and&#43;Computer&#43;Science">Electrical Engineering and Computer Science</a>
+  </li>
+  
+</ul>
+
+
+          </div>
+        </div>
+         
+        
+        <div class="mt-4">
+          <h5 class="panel-course-info-title ">
+            As Taught In
+          </h5>
+          <div class="course-info-content panel-course-info-text">
+            January IAP
+            
+              2013
+            
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <h5 class="panel-course-info-title ">
+            Level
+          </h5>
+          <div class="course-info-content panel-course-info-text">
+            
+              
+                <a class=" strip-link-offline"  href="https://ocw.mit.edu/search?l=Undergraduate">Undergraduate</a><br />
+              
+            
+          </div>
+        </div>
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+    <div class="px-3">
+      
+
+
+
+
+
+<div class=" mt-4">
+  <h5 class="panel-course-info-title ">
+    Topics
+  </h5>
+  <ul class="list-unstyled pb-2 m-0 panel-course-info-text">
+      <li>
+
+
+
+
+
+
+
+<div class="position-relative pt-1 pb-1 pl-4 ml-n2 ">
+  
+  <a class="topic-toggle"
+    href="#subtopic-container_desktop_0"
+    data-toggle="collapse"
+    aria-controls="subtopic-container_desktop_0"
+    aria-expanded="true">
+    <i aria-hidden="true" class="material-icons"></i>
+  </a>
+  
+  <span class="topic-text-wrapper">
+    
+    <a class="text-black course-info-topic strip-link-offline"  href="https://ocw.mit.edu/search?t=Engineering">Engineering</a></span>
+</div>
+
+<div class="pl-4 subtopic-container collapse show" id="subtopic-container_desktop_0">
+  
+  
+  
+  <div class="position-relative pt-1 pb-1  pl-4 ">
+    
+    <a class="topic-toggle"
+      href="#speciality-container_desktop_0_0"
+      data-toggle="collapse"
+      aria-controls="speciality-container_desktop_0_0"
+      aria-expanded="true">
+      <i aria-hidden="true" class="material-icons"></i>
+    </a>
+    
+    <span class="topic-text-wrapper">
+      
+      <a class="text-black course-info-topic strip-link-offline"  href="https://ocw.mit.edu/search?t=Computer&#43;Science">Computer Science</a></span>
+  </div>
+  <div class="collapse show" id="speciality-container_desktop_0_0">
+    
+    <div class="pt-1 pb-1 pl-5">
+      <span class="topic-text-wrapper">
+        
+        <a class="text-black course-info-topic strip-link-offline"  href="https://ocw.mit.edu/search?t=Programming&#43;Languages">Programming Languages</a></span>
+    </div>
+    
+    <div class="pt-1 pb-1 pl-5">
+      <span class="topic-text-wrapper">
+        
+        <a class="text-black course-info-topic strip-link-offline"  href="https://ocw.mit.edu/search?t=Software&#43;Design&#43;and&#43;Engineering">Software Design and Engineering</a></span>
+    </div>
+    
+  </div>
+  
+  
+</div>
+
+</li>
+      
+  </ul>
+</div>
+
+      
+
+
+
+<div class="">
+  <h5 class="course-detail-title panel-course-info-title mt-3">
+    Learning Resource Types
+  </h5>
+  <div>
+    <div class="row d-inline m-0">
+      
+        <div class="panel-course-info-text my-2">
+          
+
+<div class="">
+  <div class="d-flex">
+    <i aria-hidden="true" class="material-icons pr-1">assignment</i>
+    <span>Problem Sets</span>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="panel-course-info-text my-2">
+          
+
+<div class="">
+  <div class="d-flex">
+    <i aria-hidden="true" class="material-icons pr-1">notes</i>
+    <span>Lecture Notes</span>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="panel-course-info-text my-2">
+          
+
+<div class="">
+  <div class="d-flex">
+    <i aria-hidden="true" class="material-icons pr-1">group_work</i>
+    <span>Projects</span>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="panel-course-info-text my-2">
+          
+
+<div class="">
+  <div class="d-flex">
+    <i aria-hidden="true" class="material-icons pr-1">assignment_turned_in</i>
+    <span>Programming Assignments with Examples</span>
+  </div>
+</div>
+
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+
+      
+
+
+    </div>
+  </div>
+</div>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+<div class="footer">
+    <div class="footer-main-content mx-auto">
+    	<div class="col-12">
+        	<div class="row align-items-center">
+            	<div class="col-12 col-md-9">
+					<div class="d-md-flex align-items-center">
+						<a href="https://openlearning.mit.edu/" target="_blank">
+							<img width="150px" src="../../static_shared/images/mit-ol.png" alt="MIT Open Learning" />
+						</a>
+						<div class="ml-md-3 mt-4 mt-md-0">
+							<div class="font-weight-bold">
+								Over 2,500 courses & materials
+							</div>
+							<div>
+								Freely sharing knowledge with learners and educators around the world. <a href='https://ocw.mit.edu/about'>Learn more</a>
+							</div>
+						</div>
+					</div>
+            	</div>
+				<div class="col-12 col-md-3 d-none d-md-block">
+					<div class="d-flex justify-content-md-end">
+	<div>
+		<a href="https://www.facebook.com/MITOCW" target="_blank">
+			<img class="footer-social-icon ml-0" src="../../static_shared/images/Facebook.png" alt="facebook"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://www.instagram.com/mitocw" target="_blank">
+			<img class="footer-social-icon" src="../../static_shared/images/Instagram.png" alt="instagram"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://twitter.com/MITOCW" target="_blank">
+			<img class="footer-social-icon" src="../../static_shared/images/Twitter.png" alt="twitter"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://www.youtube.com/mitocw" target="_blank">
+			<img class="footer-social-icon" src="../../static_shared/images/Youtube.png" alt="youtube"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://www.linkedin.com/company/mit-opencourseware/" target="_blank">
+			<img class="footer-social-icon" src="../../static_shared/images/LinkedIn.png" alt="LinkedIn"/>
+		</a>
+	</div>
+</div>
+				</div>
+        	</div>
+    	</div>
+		
+		<div class="col-12 mt-3 mt-md-4">
+			<div class="row align-items-center">
+            	<div class="col-12 col-md-8">
+					<div class="d-lg-flex">
+						<div class="pr-md-2 mt-2 mt-lg-0 d-none d-lg-block">
+							© 2001–2023 Massachusetts Institute of Technology
+						</div>
+						<div class="px-md-2 mt-2 mt-lg-0">
+							<a href="https://accessibility.mit.edu" target="_blank">Accessibility</a>
+						</div>
+						<div class="px-md-2 mt-2 mt-lg-0">
+							<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons License</a>
+						</div>
+						<div class="px-md-2 mt-2 mt-lg-0">
+							<a class="hide-offline" href='https://ocw.mit.edu/pages/privacy-and-terms-of-use/'>Terms and Conditions</a>
+						</div>
+					</div>
+            	</div>
+				<div class="col-12 col-md-4">
+					<div class="d-flex justify-content-md-end mt-4 mt-lg-0">
+						<div>
+						Proud member of: 
+						<a href="https://www.oeglobal.org/" target="_blank">
+							<img class="oeg-logo" src="../../static_shared/images/oeg_logo.png" alt="Open Education Global"/>
+						</a>
+						</div>
+					</div>
+				</div>
+        	</div>
+		</div>
+
+		<div class="col-12 mt-5 d-md-none">
+			<div class="d-flex justify-content-md-end">
+	<div>
+		<a href="https://www.facebook.com/MITOCW" target="_blank">
+			<img class="footer-social-icon ml-0" src="../../static_shared/images/Facebook.png" alt="facebook"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://www.instagram.com/mitocw" target="_blank">
+			<img class="footer-social-icon" src="../../static_shared/images/Instagram.png" alt="instagram"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://twitter.com/MITOCW" target="_blank">
+			<img class="footer-social-icon" src="../../static_shared/images/Twitter.png" alt="twitter"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://www.youtube.com/mitocw" target="_blank">
+			<img class="footer-social-icon" src="../../static_shared/images/Youtube.png" alt="youtube"/>
+		</a>
+	</div>
+	<div>
+		<a href="https://www.linkedin.com/company/mit-opencourseware/" target="_blank">
+			<img class="footer-social-icon" src="../../static_shared/images/LinkedIn.png" alt="LinkedIn"/>
+		</a>
+	</div>
+</div>
+		</div>
+
+		<div class="col-12 mt-4 pl-3 pl-md-4 d-lg-none">
+			© 2001–2023 Massachusetts Institute of Technology
+		</div>
+	</div>
+</div>
+
+  </div>
+  <script>
+function hideLinksOffline(){
+  if (!window.navigator.onLine) {
+    const stripLinks = document.querySelectorAll(".strip-link-offline")
+    const hideOffline = document.querySelectorAll(".hide-offline")
+    const showOffline = document.querySelectorAll(".show-offline")
+    Array.prototype.forEach.call(stripLinks, function(link) {
+      link.outerHTML = link.innerHTML
+    })
+    Array.prototype.forEach.call(hideOffline, function(link) {
+      link.classList.add("d-none")
+    })
+    Array.prototype.forEach.call(showOffline, function(link) {
+      link.classList.remove("d-none")
+    })
+  }
+}
+hideLinksOffline()
+</script>
+
+  <script>
+    
+    
+    
+    
+    
+    
+    'use strict';
+    const COURSE_DRAWER_LOCAL_STORAGE_KEY = "desktopCourseDrawerState"
+    const COURSE_DRAWER_OPENED = "opened"
+    const COURSE_DRAWER_CLOSED = "closed"
+    
+    const DESKTOP_COURSE_DRAWER_ID = "desktop-course-drawer"
+    const SHOW_COURSE_DRAWER_BTN_ID = "show-desktop-course-drawer"
+    const HIDE_COURSE_DRAWER_BTN_ID = "hide-desktop-course-drawer"
+    const MAIN_COURSE_SECTION_ID = "main-course-section"
+
+    try{
+
+      
+
+      function maintainDesktopCourseDrawerState() {
+        const isCourseDrawerOpen = getLocalStorageItem(COURSE_DRAWER_LOCAL_STORAGE_KEY)
+        if (isCourseDrawerOpen === null) {
+          
+          setLocalStorageItem(COURSE_DRAWER_LOCAL_STORAGE_KEY, COURSE_DRAWER_OPENED)
+          showOrHideDesktopCourseDrawer(COURSE_DRAWER_OPENED)
+        } else {
+          showOrHideDesktopCourseDrawer(isCourseDrawerOpen)
+        }
+      }
+
+      
+
+      function toggleDesktopCourseDrawer() {
+        const showCourseDrawerBtn = document.getElementById(SHOW_COURSE_DRAWER_BTN_ID)
+        const hideCourseDrawerBtn = document.getElementById(HIDE_COURSE_DRAWER_BTN_ID)
+        showCourseDrawerBtn.addEventListener("click", () => {
+          setLocalStorageItem(COURSE_DRAWER_LOCAL_STORAGE_KEY, COURSE_DRAWER_OPENED)
+          showOrHideDesktopCourseDrawer(COURSE_DRAWER_OPENED)
+        })
+        hideCourseDrawerBtn.addEventListener("click", () => {
+          setLocalStorageItem(COURSE_DRAWER_LOCAL_STORAGE_KEY, COURSE_DRAWER_CLOSED)
+          showOrHideDesktopCourseDrawer(COURSE_DRAWER_CLOSED)
+        })
+      }
+
+      
+
+      function showOrHideDesktopCourseDrawer(state) {
+        const desktopCourseDrawer = document.getElementById(DESKTOP_COURSE_DRAWER_ID)
+        const showCourseDrawerBtn = document.getElementById(SHOW_COURSE_DRAWER_BTN_ID)
+        const mainCourseSection = document.getElementById(MAIN_COURSE_SECTION_ID)
+        if (state === COURSE_DRAWER_OPENED) {
+          desktopCourseDrawer.classList.add("col-3")
+          desktopCourseDrawer.classList.remove("d-none")
+          showCourseDrawerBtn.classList.add("d-none")
+          mainCourseSection.classList.add("col-lg-9")
+          mainCourseSection.classList.remove("col-md-12")
+        } else {
+          desktopCourseDrawer.classList.remove("col-3")
+          desktopCourseDrawer.classList.add("d-none")
+          showCourseDrawerBtn.classList.remove("d-none")
+          mainCourseSection.classList.remove("col-lg-9")
+          mainCourseSection.classList.add("col-md-12")
+        }
+      }
+
+      function setOrGetLocalStorageItem(action,key,value) {
+        try {
+          
+          if (typeof Storage !== "undefined") {
+            if (action === "set") {
+              localStorage.setItem(key, value)
+              return true
+            } else {
+              return localStorage.getItem(key)
+            }
+          }
+          console.error("This browser has no web storage support.")
+          return null
+        } catch (e) {
+          console.error("An exception occurred while storing/fetching data in/from localstorage: ", e)
+          return null
+        }
+      }
+
+      function setLocalStorageItem(key, value) {
+        return setOrGetLocalStorageItem("set", key, value)
+      }
+      
+      function getLocalStorageItem(key){
+        return setOrGetLocalStorageItem("get", key)
+      }
+
+      maintainDesktopCourseDrawerState()
+      toggleDesktopCourseDrawer()
+    }
+    catch(e){
+      console.error("Something went wrong in maintaining/toggling course drawer state", e)
+    }
+  </script>
+
+  
+
+<script>
+function expandNav(e,t){t.classList.add("show"),e.querySelector(".course-nav-section-toggle, video-tab-toggle-section").setAttribute("aria-expanded","true")}function courseNav(){document.querySelectorAll(".course-nav, .transcript-header").forEach(e=>{e.querySelectorAll(".nav-link").forEach(e=>{const t=e.getAttribute("href")?e.getAttribute("href"):"";if(t.replace(/\/$/,"")===window.location.pathname.replace(/\/$/,"")){e.classList.add("active");const s=e.dataset.uuid,t=e.closest(".course-nav-list-item"),n=t?.querySelector(".collapse"),o=Array.prototype.filter.call(document.querySelectorAll(".course-nav-section-toggle"),e=>e.dataset.uuid===s);t&&n&&o.length>0&&expandNav(t,n)}});const t=e.querySelector("a.nav-link.active");e.querySelectorAll(".course-nav-list-item").forEach(e=>{const n=e.querySelector(".collapse");n&&n.contains(t)&&expandNav(e,n)})})}courseNav()
+</script>
+
+  
+
+<script>
+(()=>{var e=()=>document.querySelectorAll("#course-content-section table"),t=()=>document.getElementById("course-content-section");function n(){const o=e(),n=t();if(!n)return;if(!window.ResizeObserver)return;const i=new ResizeObserver(()=>s());i.observe(n),o.forEach(e=>{const t=e.getElementsByTagName("th"),n=e.querySelectorAll("table tr");n.forEach(e=>{const n=e.querySelectorAll("td");n.forEach((e,s)=>{t.length>=s+1&&(n[s].dataset.title=t[s].innerText.trim().concat(": "))})})})}function s(){const s=e(),n=t();if(!n)return;s.forEach(e=>{const t=n.getBoundingClientRect(),o=+(e.dataset.minWidth??0);t.width>o&&e.classList.remove("mobile-table");const s=e.getBoundingClientRect();s.right>t.right&&(e.dataset.minWidth=`${s.width}`,e.classList.add("mobile-table"))})}n()})()
+</script>
+
+  
+
+
+    
+    <script src="../../static_shared/js/course_offline.67582.js"></script>
+    
+
+  
+</body>
+
+</html>
