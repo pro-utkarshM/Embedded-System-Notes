@@ -1,4 +1,4 @@
-# Linux-Kernel-Notes
+# Embedded Sysyem-Notes
 
 ## Languages
 Lecture Collection | Programming Paradigms: [Lectures](https://www.youtube.com/playlist?list=PL9D558D49CA734A02) <br>
