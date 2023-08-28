@@ -14,10 +14,10 @@
 - [ ] Annotations for the topic: riscy:  [Notes](https://riscy.handmade.network/episode/riscy) <br>
 - [ ] Fundamentals of System-on-Chip Design on Arm Cortex-M Microcontrollers: [Lectures](https://www.arm.com/resources/education/books/fundamentals-soc) <br>
 - [ ] EE261 - The Fourier Transform and its Applications: [Lecture](https://see.stanford.edu/Course/EE261/137) <br>
-- [ ] A Beginner’s Guide to Designing Embedded System Applications on Arm Cortex-M Microcontrollers: [Book](CPUs:-ARM-M-ARM-A-RISC-V-DSP/arm-designing-embedded-system-application-cortex-m.pdf) <br>
-- [ ] Modern System-on-Chip Design on Arm: [Book](CPUs:-ARM-M-ARM-A-RISC-V-DSP/arm-modern-soc-design-on-arm.pdf) <br>
-- [ ] Digital Signal Processing and Applications Using the ARM Cortex M: [Book](CPUs:-ARM-M-ARM-A-RISC-V-DSP/[Donald_S._Reay]_Digital_Signal_Processing_Using_t(BookZZ.org).pdf) <br>
-- [ ] Fundamentals of System-on-Chip Design on Arm Cortex-M Microcontrollers: [Book](CPUs:-ARM-M-ARM-A-RISC-V-DSP/arm-fundamentals-soc.pdf) <br>
+- [ ] A Beginner’s Guide to Designing Embedded System Applications on Arm Cortex-M Microcontrollers: [Book](CPUs/arm-designing-embedded-system-application-cortex-m.pdf) <br>
+- [ ] Modern System-on-Chip Design on Arm: [Book](CPUs/arm-modern-soc-design-on-arm.pdf) <br>
+- [ ] Digital Signal Processing and Applications Using the ARM Cortex M: [Book](CPUs/[Donald_S._Reay]_Digital_Signal_Processing_Using_t(BookZZ.org).pdf) <br>
+- [ ] Fundamentals of System-on-Chip Design on Arm Cortex-M Microcontrollers: [Book](CPUs/arm-fundamentals-soc.pdf) <br>
 
 ## CPUs: ARM-M/ARM-A/RISC-V/DSP
 - [ ] Operating Systems Foundations with Linux on the Raspberry Pi : [PDF-Book](Operating-System/operating-systems-foundations-with-linux-on-the-raspberry-pi.pdf) <br>
