@@ -1,0 +1,106 @@
+// riscv multi-cycle controller test vectors
+// jbrake@hmc.edu
+// 15 February 2020
+// E85 Lab 10
+// Updated 4/22/20 to change to final resultSrc mux select ordering
+
+// Testbench checks controller outputs for all supported instructions
+// lw, sw
+// add, sub, and, or, slt, addi
+// beq
+// jal
+
+// Op[6:0] Funct3[2:0] Funct7b5 Zero _ ImmSrc[1:0] ALUSrcA[1:0] ALUSrcB[1:0] ResultSrc[1:0] AdrSrc ALUControl[2:0] IRWrite PCWrite RegWrite MemWrite
+
+// Test R-type instructions
+// Each instruction takes four cycles to execute
+// AdrSrc = 0, ImmSrc = XX
+// Other outputs based on Fig Multi-cycle controller FSM
+
+//op[6:0]_funct3[2:0]_funct7b5_Zero_ImmSrc[1:0]_ALUSrcA[1:0]_ALUSrcB[1:0]_ResultSrc[1:0]_AdrSrc_ALUControl[2:0]_IRWrite_PCWrite_RegWrite_MemWrite
+// add
+0110011_000_0_0__XX_00_10_10_0_010_1_1_0_0 // Fetch
+0110011_000_0_0__XX_01_01_00_0_010_0_0_0_0 // Decode
+0110011_000_0_0__XX_10_00_00_0_010_0_0_0_0 // ExecuteR
+0110011_000_0_0__XX_00_00_00_0_010_0_0_1_0 // ALUWB
+
+// sub (only differs in ALUControl during ExecuteR)
+0110011_000_1_0__XX_00_10_10_0_010_1_1_0_0 // Fetch
+0110011_000_1_0__XX_01_01_00_0_010_0_0_0_0 // Decode
+0110011_000_1_0__XX_10_00_00_0_110_0_0_0_0 // ExecuteR
+0110011_000_1_0__XX_00_00_00_0_010_0_0_1_0 // ALUWB
+
+// or (only differs in ALUControl during ExecuteR)
+0110011_110_0_0__XX_00_10_10_0_010_1_1_0_0 // Fetch
+0110011_110_0_0__XX_01_01_00_0_010_0_0_0_0 // Decode
+0110011_110_0_0__XX_10_00_00_0_001_0_0_0_0 // ExecuteR
+0110011_110_0_0__XX_00_00_00_0_010_0_0_1_0 // ALUWB
+
+// and (only differs in ALUControl during ExecuteR)
+0110011_111_0_0__XX_00_10_10_0_010_1_1_0_0 // Fetch
+0110011_111_0_0__XX_01_01_00_0_010_0_0_0_0 // Decode
+0110011_111_0_0__XX_10_00_00_0_000_0_0_0_0 // ExecuteR
+0110011_111_0_0__XX_00_00_00_0_010_0_0_1_0 // ALUWB
+
+// slt (only differs in ALUControl during ExecuteR)
+0110011_010_0_0__XX_00_10_10_0_010_1_1_0_0 // Fetch
+0110011_010_0_0__XX_01_01_00_0_010_0_0_0_0 // Decode
+0110011_010_0_0__XX_10_00_00_0_111_0_0_0_0 // ExecuteR
+0110011_010_0_0__XX_00_00_00_0_010_0_0_1_0 // ALUWB
+
+// Test I-type instructions (lw, addi)
+// lw takes five cycles to execute, addi takes four cycles
+// ImmSrc = 00
+// Other outputs based on Fig Multi-cycle controller FSM
+
+//{Op[6:0]}_{Funct3[2:0]}_{Funct7b5}_{Zero}__{ImmSrc[1:0]}_{ALUSrcA[1:0]}_{ALUSrcB[1:0]}_{ResultSrc[1:0]}_{AdrSrc}_{ALUControl[2:0]}_{IRWrite}_{PCWrite}_{RegWrite}_{MemWrite}
+
+// lw
+0000011_010_0_0__00_00_10_10_0_010_1_1_0_0 // Fetch
+0000011_010_0_0__00_01_01_00_0_010_0_0_0_0 // Decode
+0000011_010_0_0__00_10_01_00_0_010_0_0_0_0 // MemAdr
+0000011_010_0_0__00_00_00_00_1_010_0_0_0_0 // MemRead
+0000011_010_0_0__00_00_00_01_0_010_0_0_1_0 // MemWB
+
+// addi
+0010011_000_0_0__00_00_10_10_0_010_1_1_0_0 // Fetch
+0010011_000_0_0__00_01_01_00_0_010_0_0_0_0 // Decode
+0010011_000_0_0__00_10_01_00_0_010_0_0_0_0 // ExecuteI
+0010011_000_0_0__00_00_00_00_0_010_0_0_1_0 // ALUWB
+
+// Test S-type instructions (sw)
+// sw takes four cycles to execute
+// ImmSrc = 01
+// Other outputs based on Fig Multi-cycle controller FSM
+
+//{Op[6:0]}_{Funct3[2:0]}_{Funct7b5}_{Zero}__{ImmSrc[1:0]}_{ALUSrcA[1:0]}_{ALUSrcB[1:0]}_{ResultSrc[1:0]}_{AdrSrc}_{ALUControl[2:0]}_{IRWrite}_{PCWrite}_{RegWrite}_{MemWrite}
+
+// sw
+0100011_010_0_0__01_00_10_10_0_010_1_1_0_0 // Fetch
+0100011_010_0_0__01_01_01_00_0_010_0_0_0_0 // Decode
+0100011_010_0_0__01_10_01_00_0_010_0_0_0_0 // MemAdr
+0100011_010_0_0__01_00_00_00_1_010_0_0_0_1 // MemWrite
+
+// Test B-type instructions (beq)
+// beq takes three cycles to execute
+// ImmSrc = 10
+// Other outputs based on Fig Multi-cycle controller FSM
+
+//{Op[6:0]}_{Funct3[2:0]}_{Funct7b5}_{Zero}__{ImmSrc[1:0]}_{ALUSrcA[1:0]}_{ALUSrcB[1:0]}_{ResultSrc[1:0]}_{AdrSrc}_{ALUControl[2:0]}_{IRWrite}_{PCWrite}_{RegWrite}_{MemWrite}
+
+// beq
+1100011_000_0_0__10_00_10_10_0_010_1_1_0_0 // Fetch
+1100011_000_0_0__10_01_01_00_0_010_0_0_0_0 // Decode
+1100011_000_0_0__10_10_00_00_0_110_0_0_0_0 // BEQ
+
+// Test J-type instructions (jal)
+// beq takes four cycles to execute
+// ImmSrc = 11
+// Other outputs based on Fig Multi-cycle controller FSM
+
+//{Op[6:0]}_{Funct3[2:0]}_{Funct7b5}_{Zero}__{ImmSrc[1:0]}_{ALUSrcA[1:0]}_{ALUSrcB[1:0]}_{ResultSrc[1:0]}_{AdrSrc}_{ALUControl[2:0]}_{IRWrite}_{PCWrite}_{RegWrite}_{MemWrite}
+
+1101111_000_0_0__11_00_10_10_0_010_1_1_0_0 // Fetch
+1101111_000_0_0__11_01_01_00_0_010_0_0_0_0 // Decode
+1101111_000_0_0__11_01_10_00_0_010_0_1_0_0 // JAL
+1101111_000_0_0__11_00_00_00_0_010_0_0_1_0 // ALUWB
