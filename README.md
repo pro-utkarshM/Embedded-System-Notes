@@ -1,5 +1,7 @@
 # Embedded System-Notes
 
+![intro](assets/1.jpeg)  
+
 ## Languages: C/C++/Python
 - [ ] Lecture Collection | Programming Paradigms: [Lectures](https://www.youtube.com/playlist?list=PL9D558D49CA734A02) <br>
 - [ ] C-Refresher with Arif Butt: [Lectures](https://www.youtube.com/playlist?list=PL7B2bn3G_wfD8xy4lUaoItwwJ3zKlpuUe) <br>
